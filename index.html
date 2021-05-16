@@ -1,33 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Stats preview card component</title>
 
+  <title>Frontend Mentor | Stats preview card component | by LordAldi</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
+  <div class="card">
+    <div class="card-img">
+      <picture>
+        <source media="(min-width:375px)" srcset="images/image-header-desktop.jpg">
+        <img src="images/image-header-mobile.jpg" alt="Flowers">
+      </picture>
+      <div class="overlay"></div>
+    </div>
+    <div class="card-body">
+      <h1 class="title">Get <span class="accent">insights</span> that help your business grow.</h1>
 
-  Get insights that help your business grow.
+      <p class="subtitle">
+        Discover the benefits of data analytics and make better decisions regarding revenue, customer
+        experience, and overall efficiency.
+      </p>
+      <div class="stats-group">
+        <div class="stats">
+          <h4>10k+</h4> companies
+        </div>
+        <div class="stats">
+          <h4>314</h4> templates
+        </div>
+        <div class="stats">
+          <h4>12m+</h4> queries
+        </div>
+      </div>
+    </div>
 
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
 
-  10k+ companies
-  314 templates
-  12m+ queries
+    </main>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Aldi Anugra</a>.
+    </div>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
+
 </html>
